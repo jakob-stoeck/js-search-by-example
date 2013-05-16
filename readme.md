@@ -2,7 +2,7 @@
 
 A Smalltalk browser-inspired search by example for built-in JavaScript methods.
 
-Right now only String and Number methods are supported.
+[Demo](http://jakob-stoeck.github.io/js-search-by-example/)
 
 ## Examples
 
@@ -10,10 +10,13 @@ Right now only String and Number methods are supported.
     concat
 
     > 'a';'A'
-    toUpperCase,toLocaleUpperCase
+    toUpperCase, toLocaleUpperCase
 
     > 'a,a'; ','; ['a','a']
     split
 
     > 3.14; 3
-    toFixed
+    toFixed, floor, round
+
+    > 'a'; 97
+    charCodeAt
