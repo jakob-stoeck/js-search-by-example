@@ -6,8 +6,10 @@
 </head>
 <body>
   <form>
-    <p>Write input and output in the form <code>"Hello"; " world"; "Hello world"</code> and press enter</p>
-    <p><label>Example<textarea id="example">"Hello"; " world"; "Hello world"</textarea></label></p>
+    <p>Provide examples as a JSON array. Each example object should have "input", "args" (an array), and "output" properties. Press Enter to search.</p>
+    <p>Single example: <code>[{"input": "hello", "args": [], "output": "HELLO"}]</code></p>
+    <p>Multiple examples: <code>[{"input": "a", "args": [], "output": "A"}, {"input": "b", "args": [], "output": "B"}]</code></p>
+    <p><label>Example<textarea id="example">[{"input": "abc", "args": [], "output": "ABC"}]</textarea></label></p>
     <p><label>Methods<textarea id="methods">Press Enter to see the found methods</textarea></label></p>
   </form>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>

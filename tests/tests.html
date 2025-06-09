@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Tests for search.js</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        #test-results { border: 1px solid #ccc; padding: 10px; margin-top: 20px; }
+        .log-pass { color: green; }
+        .log-fail { color: red; font-weight: bold; }
+        .summary-fail { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Unit Tests for search.js</h1>
+    
+    <div id="test-output">
+        <h2>Test Log:</h2>
+        <pre id="log-area"></pre>
+    </div>
+
+    <div id="test-results">
+        <!-- Summary will be populated by test_search.js -->
+    </div>
+
+    <!-- Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    
+    <!-- Script to be tested -->
+    <script src="../scripts/search.js"></script>
+    
+    <!-- Test script -->
+    <script src="test_search.js"></script>
+</body>
+</html>
